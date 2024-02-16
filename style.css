@@ -121,6 +121,9 @@ table{
         margin: 0;
         border-radius: 0;
     }
+    section{
+        margin: 16px;
+    }
     .img-container{
         padding: 0;
     }
