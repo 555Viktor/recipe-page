@@ -1,0 +1,136 @@
+/* Fonts */
+@font-face {
+    font-family: "Young Serif";
+    font-style: normal;
+    font-weight: 400;
+    src:url("./assets//fonts/young-serif/YoungSerif-Regular.ttf");
+}
+@font-face{
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+}
+/* Body, basic styling */
+body {
+    font-size: 1rem;
+    color: hsl(30, 10%, 34%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(30, 54%, 90%);
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 32px;
+    border-radius: 1rem;
+    background: white;
+}
+
+section {
+    padding-inline: 16px;
+    margin: 32px;
+}
+.header {
+    margin: 0;
+}
+.img-container{
+    padding: 16px;
+}
+.img-container img{
+    border-radius: 0.7rem;
+    height: 220px;
+    width: 467px;
+    overflow: clip;
+}
+
+h1{
+    color: hsl(24, 5%, 18%);
+}
+h1, h2, h3{
+    font-family: "Young Serif";
+}
+
+h2{
+    padding-left:12px;
+}
+li, p{
+    font-family: "Outfit";
+}
+
+.head-brown{
+    color: hsl(14, 45%, 36%);;
+}
+
+.head-purple{
+    color: hsl(332, 51%, 32%);
+}
+
+li{
+    padding-bottom: 12px;
+    padding-left: 12px;
+}
+/* Preparation */
+.prep-list{
+    padding: 1rem;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 1rem;
+}
+
+/* Ingredients */
+
+.ingredients {
+    border-bottom: 1px solid;
+}
+
+/* Instructions */
+.instructions{
+    border-bottom: 1px solid;  
+}
+/* Nutrition */
+table{
+    width: 100%;
+    font-family: "Outfit";
+}
+.nutrition p {
+    padding-left: 12px;
+}
+.nutrition td{
+    padding-right: 140px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.li-style{
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+
+/* Mobile */
+@media screen and (max-width:576px) {
+
+    body{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .img-container{
+        padding: 0;
+    }
+    .img-container img{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .nutrition td{
+        padding-right: 20px;
+    }
+}
